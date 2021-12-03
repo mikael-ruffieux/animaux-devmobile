@@ -1,0 +1,453 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-fire-red');
+
+@font-face {
+    font-family: pokemonFont;
+    src: url(pokemon_fire_red.ttf);
+}
+
+:root {
+    --primary-color: #4F9BE0;
+    --focus-color: #91D1D6;
+    --light-grey: #C6C6C6;
+    --dark-grey: #898989;
+    --info-color: #0038FF;
+    --success-color: #008C27;
+    --warning-color: #DB0000;
+    --warning-color-focus: darkred;
+    --orange-color: #FF8A00;
+    --bg-color: lightyellow;
+
+    --shadow-color: var(--dark-grey);
+
+    --font-s: 18px;
+    --font-m: 24px;
+    --font-l: 28px;
+    --font-xl: 36px;
+}
+
+* {
+    font-family: 'Pokemon Fire Red', sans-serif;
+    letter-spacing: 0.01em;
+    font-size: var(--font-m);
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+h1 {
+    font-size: var(--font-xl);
+}
+
+h2 {
+    font-size: var(--font-xl);
+}
+
+h3 {
+    font-size: var(--font-l);
+}
+
+h4 {
+    font-size: var(--font-m);
+    line-height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+hr {
+    border-top: 1px solid var(--dark-grey);
+}
+
+.logo {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.logo > img {
+    width: 250px;
+    height: auto;
+}
+
+.drop-inner-shadows {
+    box-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color), inset 4px 4px 0px rgba(255, 255, 255, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: block;
+    border: solid 2px black;
+    border-radius: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: var(--font-l);
+    box-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color), inset 4px 4px 0px rgba(255, 255, 255, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    text-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color);
+}
+
+.btn:hover, .btn:focus, .back-button:hover, .back-button:focus {
+    box-shadow: -1px -1px 0px var(--shadow-color), -1px 0px 0px var(--shadow-color), 0px -1px 0px var(--shadow-color), inset -4px -4px 0px rgba(255, 255, 255, 0.5), inset 4px 4px 0px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.btn-100 {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--focus-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-color: var(--warning-color-focus);
+    color: white;
+}
+
+/* Card */
+
+.card {
+    background-color: white;
+    padding: 20px 12px;
+    border: 2px solid #000000;
+    box-shadow: 1px 1px 0px var(--dark-grey), 1px 0px 0px var(--dark-grey), 0px 1px 0px var(--dark-grey), inset 4px 4px 0px rgba(255, 255, 255, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    margin: 15px auto;
+}
+
+.detail-card {
+    margin-top: 115px;
+}
+
+.detail-card .card-image {
+    display: flex;
+    height: 100px;
+}
+
+.detail-card .card-image > img {
+    width: auto;
+    height: 200px;
+    margin:auto;
+    position: relative;
+    top: -100px;
+}
+
+.detail-card .card-titles {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-card .card-titles h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.detail-card .card-titles h4 {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-grey);
+}
+
+/* Forms */
+.input-group > label {
+    display: block;
+    font-size: var(--font-s);
+    color: var(--dark-grey);
+}
+
+.input-group > .input-error {
+    display: block;
+    font-size: var(--font-s);
+    color: var(--warning-color);
+}
+
+.input-group > input {
+    border: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+
+.link-btn {
+    display:block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.link-warning {
+    color: var(--warning-color);
+    text-decoration: underline;
+    text-decoration-color: var(--warning-color);
+}
+
+.link-warning:focus, .link-warning:hover {
+    color: var(--warning-color-focus);
+    text-decoration: underline;
+    text-decoration-color: var(--warning-color-focus);
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color);
+}
+
+/* Nav */
+nav {
+    display: flex;
+    margin-top: 15px;
+}
+
+nav .back-button, nav .page-title {
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-content: middle;
+    border: 2px solid #000000;
+    text-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color);
+}
+
+nav .back-button {
+    width: 60px;
+    box-shadow: 1px 1px 0px var(--dark-grey), 1px 0px 0px var(--dark-grey), 0px 1px 0px var(--dark-grey), inset 4px 4px 0px rgba(255, 255, 255, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav .page-title {
+    width: 100%;
+    margin-left: 5px;
+
+}
+
+nav a, nav h2 {
+    margin: 0px;
+    padding: 10px;
+    font-size: var(--font-l)
+}
+
+
+/* Statistics */ 
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat {
+    --stat-color : var(--dark-grey);
+}
+
+.stat-warning {
+    --stat-color : var(--warning-color);
+}
+
+.stat-success {
+    --stat-color : var(--success-color);
+}
+
+.stat-info {
+    --stat-color : var(--info-color);
+}
+
+.stat-title {
+    text-align: center;
+    background-color: var(--stat-color);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.stat-title > span {
+    position: relative;
+    top: -11px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 0 0 var(--stat-color), -1px 0 0 var(--stat-color), 0 1px 0 var(--stat-color), 0 -1px 0 var(--stat-color), 1px 1px var(--stat-color), -1px -1px 0 var(--stat-color), 1px -1px 0 var(--stat-color), -1px 1px 0 var(--stat-color);
+}
+
+.stat-value {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Animal Button */
+.animal-button {
+    display: block;
+    margin: 15px auto;
+    height: 80px;
+}
+
+
+.animal-button:hover > .animal-description, .animal-button:focus > .animal-description {
+    border: 2px solid var(--orange-color);
+}
+
+.animal-button > .animal-image {
+    background-color: var(--focus-color);
+    position: relative;
+    height: 80px;
+    width: 80px;
+    z-index: 10;
+    border: solid 2px black;
+    border-radius: 100%;
+    display: flex;
+}
+
+.animal-button > .animal-image > img {
+    height: 75px;
+    width: auto;
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+
+.animal-button > .animal-description {
+    background-color: var(--primary-color);
+    border: solid 2px black;
+    border-radius: 0px;
+    box-shadow: 1px 1px 0px var(--dark-grey), 1px 0px 0px var(--dark-grey), 0px 1px 0px var(--dark-grey), inset 4px 4px 0px rgba(255, 255, 255, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.5);
+    height: 80px;
+    margin-left:40px;
+    display:flex;
+    align-content: middle;
+    padding: 15px;
+    position: relative;
+    top:-80px;
+}
+
+.animal-button > .animal-description .animal-titles {
+    color: white;
+    text-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color);
+    margin-left: 50px;
+    align-self: center;
+    width: 100%;
+}
+
+.animal-button > .animal-description .animal-titles p {
+    line-height: 100%;
+}
+
+.animal-button > .animal-description .animal-titles > h3, .animal-button > .animal-description .animal-titles > p  {
+    margin: 0;
+    padding: 0;
+}
+
+.animal-button > .animal-description .animal-stats {
+    align-self: center;
+    float:right;
+    min-width: 120px;
+    flex-direction: column;
+}
+
+.animal-button > .animal-description .animal-stats > .button-stat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.animal-button > .animal-description .animal-stats > .button-stat > .button-stat-name {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    height: 10px;
+    border-radius: 5px;
+    color:white;
+    margin-top: 10px;
+}
+
+.animal-button > .animal-description .animal-stats > .button-stat > .button-stat-name > span {
+    display: block;
+    position: relative;
+    top: -11px;
+    text-shadow: 1px 0 0 var(--dark-grey), -1px 0 0 var(--dark-grey), 0 1px 0 var(--dark-grey), 0 -1px 0 var(--dark-grey), 1px 1px var(--dark-grey), -1px -1px 0 var(--dark-grey), 1px -1px 0 var(--dark-grey), -1px 1px 0 var(--dark-grey);
+}
+
+.animal-button > .animal-description .animal-stats > .button-stat > .button-stat-value {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    justify-content: right;
+    margin-left: 15px;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.animal-button > .animal-description .animal-stats > .button-stat > .button-stat-value > span {
+    padding-right: 5px;
+}
+
+
+/* Filters */
+.filters > summary {
+    list-style-type: '>';
+    color: var(--dark-grey);
+}
+
+.filters[open] > summary {
+    list-style-type: 'V';
+}
+
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.filter > label {
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    padding: 1px 10px;
+    line-height: 100%;
+    margin: 10px 5px;
+}
+
+.filter > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.filter > input:checked + label {
+    color: white;
+    background-color: var(--light-grey);
+    text-shadow: 1px 1px 0px var(--shadow-color), 1px 0px 0px var(--shadow-color), 0px 1px 0px var(--shadow-color);
+    border-radius: 15px;
+}
