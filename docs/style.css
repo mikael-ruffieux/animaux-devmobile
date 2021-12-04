@@ -4,9 +4,8 @@
     font-family: 'Pokemon Fire Red';
     font-style: normal;
     font-weight: 400;
-    src: local('Pokemon Fire Red'), 
-        url('https://fonts.cdnfonts.com/s/20045/pokemon_fire_red.woff') format('woff'),
-        url('./pokemon_fire_red.ttf') format('truetype');
+    src: url('./fonts/pokemon_fire_red.woff') format('woff'),
+        url('./fonts/pokemon_fire_red.ttf') format('truetype');
 }
 
 :root {
