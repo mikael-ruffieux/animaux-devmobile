@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: pokemonFont;
-    src: url(pokemon_fire_red.ttf);
+    src: url(./pokemon_fire_red.ttf);
 }
 
 :root {
